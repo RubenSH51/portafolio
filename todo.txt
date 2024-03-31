@@ -45,3 +45,5 @@
 35- NavBar: bug de menu trabado al activar y expandir pantalla. ✅
 36- NavBar: scrolling 50 pixeles por encima al hacer click en una opción. ✅
 
+
+
