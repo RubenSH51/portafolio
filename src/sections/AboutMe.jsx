@@ -6,7 +6,7 @@ export default function AboutMe() {
         <div className='flex flex-col justify-center items-center w-full'>
             <h2 className='text-3xl mb-8'>Welcome to my Portfolio</h2>
             <div className='w-2/3 gap-4 flex justify-around items-center flex-col lg:flex-row'>
-              <img src="../../dog.jpg" alt="" className='w-80 h-80 rounded-full'/>
+              <img src="../assets/dog.jpg" alt="" className='w-80 h-80 rounded-full'/>
               <i><p className="text-center">
                 👋 Greetings! 👋 I'm Sherlock, a software engineer 🖥️ fueled by logic 🔍 and a deep love 💖 for mathematics 🧮. Specializing in front-end development, I enjoy creating visually appealing and intuitive user interfaces that elevate the digital experience.
                 <br/><br/>
