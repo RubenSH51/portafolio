@@ -8,7 +8,7 @@ export default function Projects() {
         <div className="projects-container flex flex-col items-center md:grid md:grid-cols-2 lg:grid-cols-3  w-3/4 mx-auto gap-4">
             <div className='project max-w-96 min-w-60 mx-auto h-auto bg-slate-800 rounded p-4 hover:scale-110 transition ease-in-out hover:opacity-75 hover:bg-slate-700 outline outline-blue-500 outline-offset-[-8px]'>
               <div className='project-img'>
-                <img src="../../public/taskmaster.png" className="object-cover w-full h-40 rounded-md" alt="" />
+                <img src="https://i.imgur.com/1eaLUx0.png" className="object-cover w-full h-40 rounded-md" alt="" />
               </div>
               <div className='project-description md:h-48 lg:h-60'>
                 <h3 className='text-center text-xl font-black my-4'>TaskMaster</h3>
@@ -24,80 +24,80 @@ export default function Projects() {
 
             <div className='project max-w-96 min-w-60 mx-auto h-auto bg-slate-800 rounded p-4 hover:scale-110 transition ease-in-out hover:opacity-75 hover:bg-slate-700 outline outline-blue-500 outline-offset-[-8px]'>
               <div className='project-img'>
-                <img src="../../public/filmflux.png" className="object-cover w-full h-40 rounded-md" alt="" />
+                <img src="https://i.imgur.com/RmL8gvW.png" className="object-cover w-full h-40 rounded-md" alt="" />
               </div>
               <div className='project-description md:h-48 lg:h-60'>
                 <h3 className='text-center text-xl font-black my-4'>FilmFlux</h3>
                 <p>FilmFlux is a movie page that provides information on the latest releases, top-rated films, and enables users to search for movies by title, genre, and even actor.</p>
               </div>
               <div className="botones mt-4 flex flex-col items-center gap-4">
-                <a href="https://github.com/RubenSH51/taskmaster" target='blank' 
+                <a href="https://github.com/RubenSH51/filmflux" target='blank' 
                   className='py-2 px-2 text-white rounded bg-yellow-500 hover:bg-yellow-300 transition duration-300 ease-in-out'>View repository</a>
-                <a href="https://rubensh51.github.io/taskmaster/" target='blank' 
+                <a href="https://rubensh51.github.io/filmflux/" target='blank' 
                   className='py-2 px-2 text-white rounded bg-green-500 hover:bg-green-300 transition duration-300 ease-in-out'>View project</a>
               </div>
             </div>
 
             <div className='project max-w-96 min-w-60 mx-auto h-auto bg-slate-800 rounded p-4 hover:scale-110 transition ease-in-out hover:opacity-75 hover:bg-slate-700 outline outline-blue-500 outline-offset-[-8px]'>
               <div className='project-img'>
-                <img src="../../public/dazzlingdeals.png" className="object-cover w-full h-40 rounded-md" alt="" />
+                <img src="https://i.imgur.com/CxSey6M.png" className="object-cover w-full h-40 rounded-md" alt="" />
               </div>
               <div className='project-description md:h-48 lg:h-60'>
                 <h3 className='text-center text-xl font-black my-4'>DazzlingDeals</h3>
                 <p>DazzlingDeals is an e-commerce platform that allows users to create accounts, log in, add products to their cart, make purchases, and maintain a record of past transactions.</p>
               </div>
               <div className="botones mt-4 flex flex-col items-center gap-4">
-                <a href="https://github.com/RubenSH51/taskmaster" target='blank' 
+                <a href="https://github.com/RubenSH51/DazzlingDeals" target='blank' 
                   className='py-2 px-2 text-white rounded bg-yellow-500 hover:bg-yellow-300 transition duration-300 ease-in-out'>View repository</a>
-                <a href="https://rubensh51.github.io/taskmaster/" target='blank' 
+                <a href="https://rubensh51.github.io/DazzlingDeals/" target='blank' 
                   className='py-2 px-2 text-white rounded bg-green-500 hover:bg-green-300 transition duration-300 ease-in-out'>View project</a>
               </div>
             </div>
 
             <div className='project max-w-96 min-w-60 mx-auto h-auto bg-slate-800 rounded p-4 hover:scale-110 transition ease-in-out hover:opacity-75 hover:bg-slate-700 outline outline-blue-500 outline-offset-[-8px]'>
               <div className='project-img'>
-                <img src="../../public/rock.png" className="object-cover w-full h-40 rounded-md" alt="" />
+                <img src="https://i.imgur.com/WxZwvzA.png" className="object-cover w-full h-40 rounded-md" alt="" />
               </div>
               <div className='project-description md:h-48 lg:h-60'>
                 <h3 className='text-center text-xl font-black my-4'>Rock, Paper, Scissors, Lizard, Spock</h3>
                 <p>Inspired by the popular TV series "The Big Bang Theory," this JavaScript-based game is a modern twist on the classic rock-paper-scissors game.</p>
               </div>
               <div className="botones mt-4 flex flex-col items-center gap-4">
-                <a href="https://github.com/RubenSH51/taskmaster" target='blank' 
+                <a href="https://github.com/RubenSH51/Rock-paper-scissors-lizard-Spock" target='blank' 
                   className='py-2 px-2 text-white rounded bg-yellow-500 hover:bg-yellow-300 transition duration-300 ease-in-out'>View repository</a>
-                <a href="https://rubensh51.github.io/taskmaster/" target='blank' 
+                <a href="https://rubensh51.github.io/Rock-paper-scissors-lizard-Spock/" target='blank' 
                   className='py-2 px-2 text-white rounded bg-green-500 hover:bg-green-300 transition duration-300 ease-in-out'>View project</a>
               </div>
             </div>
 
             <div className='project max-w-96 min-w-60 mx-auto h-auto bg-slate-800 rounded p-4 hover:scale-110 transition ease-in-out hover:opacity-75 hover:bg-slate-700 outline outline-blue-500 outline-offset-[-8px]'>
               <div className='project-img'>
-                <img src="../../public/quotes.png" className="object-cover w-full h-40 rounded-md" alt="" />
+                <img src="https://i.imgur.com/oSZOz3F.png" className="object-cover w-full h-40 rounded-md" alt="" />
               </div>
               <div className='project-description md:h-48 lg:h-60'>
                 <h3 className='text-center text-xl font-black my-4'>Quotes</h3>
                 <p>Quotes is a webpage displaying quotes from well-known authors. It is one of my early projects, and refreshing the page reveals new quotes.</p>
               </div>
               <div className="botones mt-4 flex flex-col items-center gap-4">
-                <a href="https://github.com/RubenSH51/taskmaster" target='blank' 
+                <a href="https://github.com/RubenSH51/Quotes" target='blank' 
                   className='py-2 px-2 text-white rounded bg-yellow-500 hover:bg-yellow-300 transition duration-300 ease-in-out'>View repository</a>
-                <a href="https://rubensh51.github.io/taskmaster/" target='blank' 
+                <a href="https://rubensh51.github.io/Quotes/" target='blank' 
                   className='py-2 px-2 text-white rounded bg-green-500 hover:bg-green-300 transition duration-300 ease-in-out'>View project</a>
               </div>
             </div>
 
             <div className='project max-w-96 min-w-60 mx-auto h-auto bg-slate-800 rounded p-4 hover:scale-110 transition ease-in-out hover:opacity-75 hover:bg-slate-700 outline outline-blue-500 outline-offset-[-8px]'>
               <div className='project-img'>
-                <img src="../../public/memojis.png" className="object-cover w-full h-40 rounded-md" alt="" />
+                <img src="https://i.imgur.com/h5QOitC.png" className="object-cover w-full h-40 rounded-md" alt="" />
               </div>
               <div className='project-description md:h-48 lg:h-60'>
                 <h3 className='text-center text-xl font-black my-4'>Memojis</h3>
                 <p>Memojis is a fun and addictive memory game featuring emojis, built entirely in JavaScript. It offers various levels of difficulty for players to challenge themselves and enjoy.</p>
               </div>
               <div className="botones mt-4 flex flex-col items-center gap-4">
-                <a href="https://github.com/RubenSH51/taskmaster" target='blank' 
+                <a href="https://github.com/RubenSH51/Memojis" target='blank' 
                   className='py-2 px-2 text-white rounded bg-yellow-500 hover:bg-yellow-300 transition duration-300 ease-in-out'>View repository</a>
-                <a href="https://rubensh51.github.io/taskmaster/" target='blank' 
+                <a href="https://rubensh51.github.io/Memojis/" target='blank' 
                   className='py-2 px-2 text-white rounded bg-green-500 hover:bg-green-300 transition duration-300 ease-in-out'>View project</a>
               </div>
             </div>

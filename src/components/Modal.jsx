@@ -10,7 +10,7 @@ export default function Modal({setShowModal, study}) {
           <span onClick={() => setShowModal(false)} className='cursor-pointer absolute top-1 right-1'>❌</span>
           <h1 id="modal-title" className='text-center text-black text-3xl mt-8'>MODAL ACTIVATED!</h1>
           <div>
-            <img className='p-2 w-full' id="certificacion-img" src={`../../${study || "dog"}.jpg`} alt="" />
+            <img className='p-2 w-full' id="certificacion-img" src={`../../${study || "https://i.imgur.com/E0B5ewn.jpeg"}`} alt="" />
           </div>
         </div>
       </div>
