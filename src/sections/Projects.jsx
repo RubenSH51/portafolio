@@ -8,7 +8,7 @@ export default function Projects() {
         <div className="projects-container flex flex-col items-center md:grid md:grid-cols-2 lg:grid-cols-3  w-3/4 mx-auto gap-4">
             <div className='project max-w-96 min-w-60 mx-auto h-auto bg-slate-800 rounded p-4 hover:scale-110 transition ease-in-out hover:opacity-75 hover:bg-slate-700 outline outline-blue-500 outline-offset-[-8px]'>
               <div className='project-img'>
-                <img src="../../taskmaster.png" className="object-cover w-full h-40 rounded-md" alt="" />
+                <img src="../../public/taskmaster.png" className="object-cover w-full h-40 rounded-md" alt="" />
               </div>
               <div className='project-description md:h-48 lg:h-60'>
                 <h3 className='text-center text-xl font-black my-4'>TaskMaster</h3>
@@ -24,7 +24,7 @@ export default function Projects() {
 
             <div className='project max-w-96 min-w-60 mx-auto h-auto bg-slate-800 rounded p-4 hover:scale-110 transition ease-in-out hover:opacity-75 hover:bg-slate-700 outline outline-blue-500 outline-offset-[-8px]'>
               <div className='project-img'>
-                <img src="../../filmflux.png" className="object-cover w-full h-40 rounded-md" alt="" />
+                <img src="../../public/filmflux.png" className="object-cover w-full h-40 rounded-md" alt="" />
               </div>
               <div className='project-description md:h-48 lg:h-60'>
                 <h3 className='text-center text-xl font-black my-4'>FilmFlux</h3>
@@ -40,7 +40,7 @@ export default function Projects() {
 
             <div className='project max-w-96 min-w-60 mx-auto h-auto bg-slate-800 rounded p-4 hover:scale-110 transition ease-in-out hover:opacity-75 hover:bg-slate-700 outline outline-blue-500 outline-offset-[-8px]'>
               <div className='project-img'>
-                <img src="../../dazzlingdeals.png" className="object-cover w-full h-40 rounded-md" alt="" />
+                <img src="../../public/dazzlingdeals.png" className="object-cover w-full h-40 rounded-md" alt="" />
               </div>
               <div className='project-description md:h-48 lg:h-60'>
                 <h3 className='text-center text-xl font-black my-4'>DazzlingDeals</h3>
@@ -56,7 +56,7 @@ export default function Projects() {
 
             <div className='project max-w-96 min-w-60 mx-auto h-auto bg-slate-800 rounded p-4 hover:scale-110 transition ease-in-out hover:opacity-75 hover:bg-slate-700 outline outline-blue-500 outline-offset-[-8px]'>
               <div className='project-img'>
-                <img src="../../rock.png" className="object-cover w-full h-40 rounded-md" alt="" />
+                <img src="../../public/rock.png" className="object-cover w-full h-40 rounded-md" alt="" />
               </div>
               <div className='project-description md:h-48 lg:h-60'>
                 <h3 className='text-center text-xl font-black my-4'>Rock, Paper, Scissors, Lizard, Spock</h3>
@@ -72,7 +72,7 @@ export default function Projects() {
 
             <div className='project max-w-96 min-w-60 mx-auto h-auto bg-slate-800 rounded p-4 hover:scale-110 transition ease-in-out hover:opacity-75 hover:bg-slate-700 outline outline-blue-500 outline-offset-[-8px]'>
               <div className='project-img'>
-                <img src="../../quotes.png" className="object-cover w-full h-40 rounded-md" alt="" />
+                <img src="../../public/quotes.png" className="object-cover w-full h-40 rounded-md" alt="" />
               </div>
               <div className='project-description md:h-48 lg:h-60'>
                 <h3 className='text-center text-xl font-black my-4'>Quotes</h3>
@@ -88,7 +88,7 @@ export default function Projects() {
 
             <div className='project max-w-96 min-w-60 mx-auto h-auto bg-slate-800 rounded p-4 hover:scale-110 transition ease-in-out hover:opacity-75 hover:bg-slate-700 outline outline-blue-500 outline-offset-[-8px]'>
               <div className='project-img'>
-                <img src="../../memojis.png" className="object-cover w-full h-40 rounded-md" alt="" />
+                <img src="../../public/memojis.png" className="object-cover w-full h-40 rounded-md" alt="" />
               </div>
               <div className='project-description md:h-48 lg:h-60'>
                 <h3 className='text-center text-xl font-black my-4'>Memojis</h3>
