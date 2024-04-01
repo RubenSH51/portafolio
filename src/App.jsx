@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import './App.css'
 import Navbar from './components/Navbar'
 import AboutMe from './sections/AboutMe'
@@ -9,27 +7,24 @@ import Projects from './sections/Projects'
 import Interests from './sections/Interests'
 import Contact from './sections/Contact'
 import SocialMedia from './sections/SocialMedia'
-// import Modal from './components/Modal'
+import Skills from './sections/Skills'
+import CurrentlyStudying from './sections/CurrentlyStudying'
 
 
 function App() {
-  // const [showModal, setShowModal] = useState(false);
-
 
   return (
   
     <>
-      {/* {showModal && <Modal />} */}
       <header>
         <Navbar />
       </header>
 
       <main>
         <AboutMe />
-        <Studies 
-          // showModal={showModal}
-          // setShowModal={setShowModal}
-          />
+        <Studies />
+        <Skills />
+        <CurrentlyStudying />
         <WorkExperience />
         <Projects />
         <Interests />

@@ -1,6 +1,7 @@
 import React from 'react'
 
-export default function Modal({setShowModal, study}) {
+export default function Modal({setShowModal, certification}) {
+
   return (
 
     <div className='z-50 w-screen h-screen fixed top-0 flex justify-center items-center'>
@@ -10,7 +11,7 @@ export default function Modal({setShowModal, study}) {
           <span onClick={() => setShowModal(false)} className='cursor-pointer absolute top-1 right-1'>❌</span>
           <h1 id="modal-title" className='text-center text-black text-3xl mt-8'>MODAL ACTIVATED!</h1>
           <div>
-            <img className='p-2 w-full' id="certificacion-img" src={`../../${study || "https://i.imgur.com/E0B5ewn.jpeg"}`} alt="" />
+            <img className='p-2 w-full' id="certificacion-img" src={certification} alt="" />
           </div>
         </div>
       </div>

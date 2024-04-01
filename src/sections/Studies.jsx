@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Modal from '../components/Modal';
 
 export default function Studies() {
   const [showModal, setShowModal] = useState(false);
-  const [studySelected, setStudySelected] = useState('');
+  const [certificationSelected, setCertificationSelected] = useState('');
 
   function showCertification(study)
   {
@@ -18,39 +18,30 @@ export default function Studies() {
 
     setShowModal(true);
 
-    
+    let data = "https://i.imgur.com/MpHC9dy.jpg";
+    let eng1 = "https://i.imgur.com/YlaphAD.jpg";
+    let eng2 = "https://i.imgur.com/uKzeYMQ.jpg";
 
-    
 
-    setTimeout(() => {
-
-      let modalTitle = document.getElementById('modal-title');
-      let certificacionImg = document.getElementById('certificacion-img');
-
+ 
       switch(study)
     {
-      case "software" : console.log("Certificación de "+study) ;
-                        setStudySelected('')                  
+      case "software" : setCertificationSelected('software')                  
                         break;
-      case "data"     : console.log("Certificación de "+study) ;
-                        setStudySelected('data')                  
+      case "data"     : setCertificationSelected(data)                  
                         break;
-      case "front"    : console.log("Certificación de "+study) ;
-                        setStudySelected('')                  
+      case "front"    : setCertificationSelected('front')                  
                         break;
-      case "back"     : console.log("Certificación de "+study) ;
-                        setStudySelected('')                  
+      case "back"     : setCertificationSelected('back')                  
                         break;
-      case "english"  : console.log("Certificación de "+study) ;
-                        setStudySelected('ingles1')                  
+      case "english"  : setCertificationSelected(eng1)                  
                         break;
-      default         : console.log("Certificación de "+study) ;
-                        setStudySelected('')                  
+      default         : setCertificationSelected('perro')                  
                         break;
     }
-    },300)
-  }
 
+  }
+  
 
   return (
     <section id="studies" className='bg-teal-950 relative'>
@@ -119,7 +110,7 @@ export default function Studies() {
         </div>
       </div>
 
-      {showModal && <Modal setShowModal={setShowModal} study={studySelected} />}
+      {showModal && <Modal setShowModal={setShowModal} certification={certificationSelected} />}
     </section>
   )
 }
