@@ -66,63 +66,64 @@ export default function Education() {
           Here are some of the educational milestones I've achieved and the ongoing 
           endeavors I'm pursuing to enhance my skills and expertise:
       </p>
+      
       <div className="estudios flex flex-col items-center md:grid md:grid-cols-2 lg:grid-cols-3 w-3/4 mx-auto gap-8">
-        <div className="study mb-8 p-4 border h-100 flex flex-col justify-between max-w-80 h-96 transition-colors duration-300 ease-in-out bg-gray-700 hover:bg-gray-800 rounded-md">
-          <h3 className='text-xl font-black text-center mb-4'>Software Developer</h3>
-          <div>
-            <p><strong>Instituto:</strong> I12</p>
-            <p><strong>Fecha de Graduación:</strong> 12/2023</p>
-            <p>Me gradué como desarrollador de software en el Instituto I12, donde adquirí habilidades fundamentales en programación y desarrollo de aplicaciones.</p>
-          </div>
-          <button onClick={() => showCertification("software")} className="w-full mt-auto bg-slate-900 hover:bg-slate-700 hover:text-white duration-300 transition ease-in-out">
-            Ver certificación
-          </button>
-        </div>
-          
-        <div className="study mb-8 p-4 border h-100 flex flex-col justify-between max-w-80 h-96 transition-colors duration-300 ease-in-out bg-gray-700 hover:bg-gray-800 rounded-md">
-          <h3 className='text-xl font-black text-center mb-4'>Data Analyst</h3>
-          <div>
-            <p><strong>Plataforma:</strong> Potsi</p>
-            <p>Completé un curso de Data Analyst en la plataforma Potsi, lo que me permitió desarrollar habilidades en análisis de datos y visualización.</p>
-          </div>
-          <button onClick={() => showCertification("data")} className="w-full mt-auto bg-slate-900 hover:bg-slate-700 hover:text-white duration-300 transition ease-in-out">
-            Ver certificación
-          </button>
-        </div>
 
-        <div className="study mb-8 p-4 border h-100 flex flex-col justify-between max-w-80 h-96 transition-colors duration-300 ease-in-out bg-gray-700 hover:bg-gray-800 rounded-md">
-          <h3 className='text-xl font-black text-center mb-4'>Front End Developer</h3>
-          <div>
-            <p><strong>Plataformas:</strong> Potsi, Udemy y FreeCodeCamp</p>
-            <p>Me he especializado en desarrollo front-end a través de cursos en Potsi, Udemy y en bootcamps como FreeCodeCamp, lo que me ha proporcionado habilidades sólidas en diseño y desarrollo de interfaces de usuario.</p>
-          </div>
-          <button onClick={() => showCertification("front")} className="w-full mt-auto bg-slate-900 hover:bg-slate-700 hover:text-white duration-300 transition ease-in-out">
-            Ver certificación
-          </button>
-        </div>
+        <StudyItemCard 
+          title={"Software Developer"}
+          platform={"Institute"}
+          platformResponse={"I12"}
+          description={"I graduated as a software developer from Institute I12, where I acquired fundamental skills in programming and application development."}
+          extraSubtitle={"Graduation date"}
+          extraSubtitleText={"12/2023"}
+          category={"software"}
+          showCertification={showCertification}
+        />
 
-        <div className="study mb-8 p-4 border h-100 flex flex-col justify-between max-w-80 h-96 transition-colors duration-300 ease-in-out bg-gray-700 hover:bg-gray-800 rounded-md">
-          <h3 className='text-xl font-black text-center mb-4'>Back End Developer</h3>
-          <div>
-            <p><strong>Experiencia:</strong> Creación de sistemas básicos</p>
-            <p>Tengo experiencia en desarrollo backend utilizando Python y Django. He creado sistemas básicos utilizando este stack tecnológico, lo que me ha proporcionado una comprensión sólida de la lógica del backend y la construcción de aplicaciones web dinámicas.</p>
-          </div>
-          <button onClick={() => showCertification("back")} className="w-full mt-auto bg-slate-900 hover:bg-slate-700 hover:text-white duration-300 transition ease-in-out">
-            Ver certificación
-          </button>
-        </div>
+        <StudyItemCard 
+          title={"Data Analyst"}
+          platform={"Platform"}
+          platformResponse={"Platzi"}
+          description={"Completed a Data Analyst specialization through Platzi online learning platform, which enabled me to develop skills in data analysis and visualization."}
+          extraSubtitle={"Completion date"}
+          extraSubtitleText={"08/2022"}
+          category={"data"}
+          showCertification={showCertification}
+        />
 
-        <div className="study mb-8 p-4 border h-100 flex flex-col justify-between max-w-80 h-96 transition-colors duration-300 ease-in-out bg-gray-700 hover:bg-gray-800 rounded-md">
-          <h3 className='text-xl font-black text-center mb-4'>Inglés</h3>
-          <div>
-            <p><strong>Plataforma:</strong> Potsi</p>
-            <p><strong>Autoestudio:</strong> Por mi cuenta</p>
-            <p>He dedicado tiempo al estudio del idioma inglés tanto en la plataforma Potsi como de forma autodidacta, lo que me ha permitido mejorar mis habilidades de comunicación.</p>
-          </div>
-          <button onClick={() => showCertification("english")} className="w-full mt-auto bg-slate-900 hover:bg-slate-700 hover:text-white duration-300 transition ease-in-out">
-            Ver certificación
-          </button> 
-        </div>
+        <StudyItemCard 
+          title={"Front End Developer"}
+          platform={"Platforms"}
+          platformResponse={"Platzi, Udemy, Freecodecamp and more"}
+          description={"I've specialized in front-end development through courses on Platzi, Udemy, Argentina Programa, Oracle One and bootcamps like FreeCodeCamp, providing me with solid skills in user interface design and development."}
+          extraSubtitle={"Completion date"}
+          extraSubtitleText={"10/2021"}
+          category={"front"}
+          showCertification={showCertification}
+        />
+
+        <StudyItemCard 
+          title={"Back End Developer"}
+          platform={"Institute"}
+          platformResponse={"I12"}
+          description={"I'm experienced in backend development with Python and Django, building basic systems for a solid grasp of backend logic and dynamic web apps."}
+          extraSubtitle={"Graduation date"}
+          extraSubtitleText={"12/2023"}
+          category={"back"}
+          showCertification={showCertification}
+        />
+
+        <StudyItemCard 
+          title={"English"}
+          platform={"Platform"}
+          platformResponse={"Platzi and self-taught"}
+          description={"I've dedicated time to studying English on platforms like Platzi and independently, improving my communication skills."}
+          extraSubtitle={"Completion date"}
+          extraSubtitleText={"I'm still learning"}
+          category={"english"}
+          showCertification={showCertification}
+        />
+        
       </div>
 
       {showModal && 
@@ -135,3 +136,21 @@ export default function Education() {
     </section>
   )
 }
+
+
+function StudyItemCard({title,platform,platformResponse,description, extraSubtitle, extraSubtitleText, category, showCertification}){
+  return (
+    <div className="study mb-8 p-4 border h-100 flex flex-col justify-between max-w-80 h-96 transition-colors duration-300 ease-in-out bg-gray-700 hover:bg-gray-800 rounded-md">
+      <h3 className='text-xl font-black text-center mb-4'>{title}</h3>
+      <div>
+        <p><strong>{platform}:</strong> {platformResponse}</p>
+        { extraSubtitle && <p><strong>{extraSubtitle}:</strong> {extraSubtitleText}</p>}
+        <p>{description}</p>
+      </div>
+      <button onClick={() => showCertification(category)} className="w-full mt-auto bg-slate-900 hover:bg-slate-700 hover:text-white duration-300 transition ease-in-out">
+            Ver certificación
+          </button>
+    </div>
+  )
+}
+

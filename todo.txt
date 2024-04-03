@@ -54,17 +54,21 @@
 45- Secciones con nombres retocados ✅
 46- Navbar: width full en los <a> para tener mayor area de click ✅
 47- Cambio de emoji en Education para que tenga mejor sentido ✅
+18- Favicon ✅
+49- Reestructuración de la parte de estudios usando un componente StudyItemCard ✅
+27- Reemplazar el texto dummy de las cards de estudios ✅
+48- Poner mi nombre ✅
 
 
-
-
+* Can't do ❌
 42- Carousel: Actualizar certificaciones en todos los estudios (Imposible ahora 😓😓😓)
+
 
 *Dummy steps:
 6- Foto en about me 😝
-27- Reemplazar el texto dummy de las cards de estudios 😝
-18- Favicon 😝
-48- Poner mi nombre 😳
+49- Subir certificaciones de Oracle One y ver si hay alguna de argentina programa en algun lado 👀
+50- Ver la posibilidad de agregar más skills como  bootstrap, scrum, sql, Selenium, etc
+
 
 
 
