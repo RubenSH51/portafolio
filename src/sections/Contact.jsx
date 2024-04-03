@@ -70,7 +70,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className='bg-emerald-950 py-8 px-4'>
-      <h3 className='text-2xl font-black text-center mb-8'>Contact Me</h3>
+      <h3 className='text-3xl font-black text-center mb-8'>Contact Me ✉️</h3>
       <form action='https://formspree.io/f/mgegnllz' onSubmit={handleFormSubmit} className='mx-auto w-full max-w-md bg-white shadow-md rounded px-8 pt-6 pb-8'>
         <div className='mb-4'>
           <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor="name">

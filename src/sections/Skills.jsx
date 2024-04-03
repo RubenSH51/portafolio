@@ -7,7 +7,7 @@ export default function Skills() {
     return (
       <section id="skills" className="bg-gray-100 py-12">
         <div className="container mx-auto">
-        <h3 className='text-2xl text-center pt-8 mb-8 font-black text-black text-center mb-4'>Skills</h3>
+        <h3 className='text-3xl text-center pt-8 mb-8 font-black text-black text-center mb-4'>Skills 📊</h3>
         <p className="text-center text-lg text-gray-800 mb-6 w-3/4 mx-auto">
         In the dynamic field of software engineering, continuous learning and skill development are essential. 
         Below, you'll find an overview of my expertise and proficiencies. From frontend technologies like React.js 
@@ -74,7 +74,7 @@ export default function Skills() {
   function SkillItem({ name, icon, description, imagenLink, link }) {
     return (
       <div className="bg-white rounded-lg shadow-md p-4 flex flex-col items-center justify-center text-center">
-        <div className="text-2xl text-gray-600 mb-2">
+        <div className="text-2xl text-black mb-2">
           {imagenLink ? <FontAwesomeIcon icon={icon} /> : <img className='w-6' src={link} />}
           
         </div>

@@ -1,11 +1,11 @@
 
 import React from 'react';
 
-export default function CurrentlyStudying() {
+export default function OngoingStudies() {
   return (
-    <section id="currently-studying" className="py-12  bg-green-200 py-8 ">
+    <section id="ongoingstudies" className="py-12  bg-green-200 py-8 ">
       <div className="container mx-auto w-5/6">
-        <h3 className='text-2xl text-center  pt-8 mb-8 text-gray-800 font-black text-center mb-4'>Currently Studying</h3>
+        <h3 className='text-3xl text-center  pt-8 mb-8 text-gray-800 font-black text-center mb-4'>Ongoing Studies 📚</h3>
         <p className="text-center text-lg text-gray-700 mb-6 w-3/4 mx-auto">
             Continuous learning is essential in today's fast-paced world. Here's a glimpse into my current educational pursuits and the exciting areas I'm exploring to expand my knowledge and skills:
         </p>

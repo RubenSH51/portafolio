@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import Modal from '../components/Modal';
 
-export default function Studies() {
+export default function Education() {
   const [showModal, setShowModal] = useState(false);
-  const [certificationSelected, setCertificationSelected] = useState('');
+  const [certificationSelected, setCertificationSelected] = useState([]);
+  const [studyTitle, setStudyTitle] = useState('')
 
   function showCertification(study)
   {
@@ -18,25 +19,39 @@ export default function Studies() {
 
     setShowModal(true);
 
-    let data = "https://i.imgur.com/MpHC9dy.jpg";
-    let eng1 = "https://i.imgur.com/YlaphAD.jpg";
-    let eng2 = "https://i.imgur.com/uKzeYMQ.jpg";
+    let dataAnalyst = "https://i.imgur.com/MpHC9dy.jpg";
+    let eng2 = "https://i.imgur.com/YlaphAD.jpg";
+    let eng1 = "https://i.imgur.com/uKzeYMQ.jpg";
+
+    //certificaciones:
+
+    let software = [eng1,eng2,dataAnalyst];
+    let data = [eng1,eng2,dataAnalyst];
+    let front = [eng1,eng2,dataAnalyst];
+    let back = [eng1,eng2,dataAnalyst];
+    let english = [eng1,eng2,dataAnalyst];
 
 
  
       switch(study)
     {
-      case "software" : setCertificationSelected('software')                  
+      case "software" : setCertificationSelected(software);
+                        setStudyTitle("Software Development")
                         break;
-      case "data"     : setCertificationSelected(data)                  
+      case "data"     : setCertificationSelected(data);
+                        setStudyTitle("Data Analysis")
                         break;
-      case "front"    : setCertificationSelected('front')                  
+      case "front"    : setCertificationSelected(front);
+                        setStudyTitle("Front-end Development")
                         break;
-      case "back"     : setCertificationSelected('back')                  
+      case "back"     : setCertificationSelected(back);
+                        setStudyTitle("Back-end Development")
                         break;
-      case "english"  : setCertificationSelected(eng1)                  
+      case "english"  : setCertificationSelected(english);
+                        setStudyTitle("English")
                         break;
-      default         : setCertificationSelected('perro')                  
+      default         : setCertificationSelected('perro');
+                        setStudyTitle('')
                         break;
     }
 
@@ -44,8 +59,8 @@ export default function Studies() {
   
 
   return (
-    <section id="studies" className='bg-teal-950 relative'>
-      <h3 className='text-2xl text-center pt-8 mb-8 font-black text-center mb-4'>Studies</h3>
+    <section id="education" className='bg-teal-950 relative'>
+      <h3 className='text-3xl text-center pt-8 mb-8 font-black text-center mb-4'>Education 🎓</h3>
       <p className="text-center text-lg text-white-800 mb-6 w-3/4 mx-auto">
           I believe in the importance of lifelong learning and continuous self-improvement. 
           Here are some of the educational milestones I've achieved and the ongoing 
@@ -110,7 +125,13 @@ export default function Studies() {
         </div>
       </div>
 
-      {showModal && <Modal setShowModal={setShowModal} certification={certificationSelected} />}
+      {showModal && 
+        <Modal 
+              setShowModal={setShowModal} 
+              certifications={certificationSelected} 
+              studyTitle={studyTitle}
+        />
+      }
     </section>
   )
 }

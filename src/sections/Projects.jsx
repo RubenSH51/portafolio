@@ -3,7 +3,7 @@ import React from 'react'
 export default function Projects() {
   return (
     <section  id="projects" className='bg-indigo-400 h-full flex flex-col items-center pb-8'>
-        <h3 className='text-2xl text-center pt-8 mb-8 font-black text-center mb-4'>Projects</h3>
+        <h3 className='text-3xl text-center pt-8 mb-8 font-black text-center mb-4'>Projects 🛠️</h3>
         <p className="text-center text-lg text-white-800 mb-6 w-3/4 mx-auto">Below, you'll find a collection of projects that reflect my journey as a front-end developer. Each project showcases my skills in JavaScript and React, offering a glimpse into my passion for creating interactive and engaging web experiences. From to-do lists to interactive games, these projects not only demonstrate my technical abilities but also highlight my dedication to mastering front-end development. Explore these projects to discover the creativity, problem-solving, and attention to detail that define my work as a developer.</p>
         <div className="projects-container flex flex-col items-center md:grid md:grid-cols-2 lg:grid-cols-3  w-3/4 mx-auto gap-4">
             <div className='project max-w-96 min-w-60 mx-auto h-auto bg-slate-800 rounded p-4 hover:scale-110 transition ease-in-out hover:opacity-75 hover:bg-slate-700 outline outline-blue-500 outline-offset-[-8px]'>

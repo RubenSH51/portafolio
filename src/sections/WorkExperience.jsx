@@ -34,7 +34,9 @@ export default function WorkExperience() {
 
     <section id="workexperience" className='bg-cyan-800 py-8'>
       <div className="container mx-auto w-5/6">
-        <h3 className='text-3xl font-bold text-center mb-8 text-white-900'>Work Experience</h3>
+        <h3 className='text-3xl font-bold text-center mb-8 text-white-900'>Work Experience 💼</h3>
+       
+
         <p className="text-lg text-center text-white-800 mb-6">
           Although my professional experience may be limited, I have gained valuable insights and skills from my previous roles in the tech industry. These experiences have provided me with a strong foundation and a deep understanding of various aspects of technology. Below, I highlight some of the key positions I've held, where I've actively contributed and honed my abilities to drive projects forward.
         </p>

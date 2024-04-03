@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <section id="aboutme" className="mt-12 bg-blue-400 w-full  py-8 flex flex-col items-center justify-center">
         <div className='flex flex-col justify-center items-center w-full'>
-            <h2 className='text-3xl mb-8'>Welcome to my Portfolio</h2>
+            <h3  className='text-3xl font-bold text-center mb-8 text-white-900'>Welcome to my Portfolio 👨‍💼</h3>
             <div className='w-2/3 gap-4 flex justify-around items-center flex-col lg:flex-row'>
               <img src="https://i.imgur.com/E0B5ewn.jpeg" alt="" className='w-80 h-80 rounded-full'/>
               <i><p className="text-center">

@@ -1,36 +1,3 @@
-// import React from 'react'
-
-
-// export default function Navbar() {
-//   return (
-    
-//     <nav className='w-full flex justify-center bg-slate-800 fixed z-50'>
-//       <ul className='flex w-full justify-around'>
-//         <li className='cursor-pointer bg-slate-800 hover:rounded hover:bg-slate-400 justify-center duration-300 ease-in-out w-40 h-16 flex items-center'>
-//           <a className='text-white h-full flex items-center ' href="#aboutme">About me 👨‍💼</a>
-//         </li>
-//         <li className='cursor-pointer bg-slate-800 hover:rounded hover:bg-slate-400 justify-center duration-300 ease-in-out w-40 h-16 flex items-center'>
-//           <a className='text-white h-full flex items-center ' href="#studies">Studies 📚</a>
-//         </li>
-//         <li className='cursor-pointer bg-slate-800 hover:rounded hover:bg-slate-400 justify-center duration-300 ease-in-out w-40 h-16 flex items-center'>
-//           <a className='text-white h-full flex items-center ' href="#workexperience">Work experience 💼</a>
-//         </li>
-//         <li className='cursor-pointer bg-slate-800 hover:rounded hover:bg-slate-400 justify-center duration-300 ease-in-out w-40 h-16 flex items-center'>
-//           <a className='text-white h-full flex items-center ' href="#projects">Projects 🛠️</a>
-//         </li>
-//         <li className='cursor-pointer bg-slate-800 hover:rounded hover:bg-slate-400 justify-center duration-300 ease-in-out w-40 h-16 flex items-center'>
-//           <a className='text-white h-full flex items-center ' href="#interests">Interests 🎵</a>
-//         </li>
-//         <li className='cursor-pointer bg-slate-800 hover:rounded hover:bg-slate-400 justify-center duration-300 ease-in-out w-40 h-16 flex items-center'>
-//           <a className='text-white h-full flex items-center ' href="#contact">Contact ✉️</a>
-//         </li>
-//       </ul>
-
-//     </nav>
-//   )
-// }
-
-
 import React, { useEffect, useState } from 'react';
 
 export default function Navbar() {
@@ -78,22 +45,55 @@ export default function Navbar() {
       </button>
       <ul className={`flex w-full justify-around lg:flex lg:justify-around ${isOpen ? 'flex-col bg-slate-800 items-center' : 'hidden'}`}>
         <li className={`${isOpen ? "w-full" : ''} cursor-pointer bg-slate-800 hover:rounded hover:bg-slate-400 justify-center duration-300 ease-in-out w-40 h-16 flex items-center`}>
-          <a className={`${isOpen ? "w-full flex justify-center" : ''} text-white h-full flex items-center`} href="#aboutme" onClick={(e) => handleClickScrolling(e, "aboutme")}>About me 👨‍💼</a>
+          <a className={`${isOpen ? "w-full flex flex-row" : ''} w-full text-white h-full flex ${isOpen ? "gap-2 ": "flex-col"} items-center justify-center`} href="#aboutme" onClick={(e) => handleClickScrolling(e, "aboutme")}>
+            <p>About me</p>
+            <span>👨‍💼</span>
+          </a>
         </li>
         <li className={`${isOpen ? "w-full" : ''} cursor-pointer bg-slate-800 hover:rounded hover:bg-slate-400 justify-center duration-300 ease-in-out w-40 h-16 flex items-center`}>
-          <a className={`${isOpen ? "w-full flex justify-center" : ''} text-white h-full flex items-center`} href="#studies" onClick={(e) => handleClickScrolling(e, "studies")}>Studies 📚</a>
+          <a className={`${isOpen ? "w-full flex flex-row" : ''} w-full text-white h-full flex ${isOpen ? "gap-2 ": "flex-col"} items-center justify-center`} href="#studies" onClick={(e) => handleClickScrolling(e, "education")}>
+            <p>Education</p>
+            <span>🎓</span>
+          </a>
+        </li>
+
+        <li className={`${isOpen ? "w-full" : ''} cursor-pointer bg-slate-800 hover:rounded hover:bg-slate-400 justify-center duration-300 ease-in-out w-40 h-16 flex items-center`}>
+          <a className={`${isOpen ? "w-full flex flex-row" : ''} w-full text-white h-full flex ${isOpen ? "gap-2 ": "flex-col"} items-center justify-center`} href="#projects" onClick={(e) => handleClickScrolling(e, "skills")}>
+            <p>Skills</p>
+            <span>📊</span>
+          </a>
         </li>
         <li className={`${isOpen ? "w-full" : ''} cursor-pointer bg-slate-800 hover:rounded hover:bg-slate-400 justify-center duration-300 ease-in-out w-40 h-16 flex items-center`}>
-          <a className={`${isOpen ? "w-full flex justify-center" : ''} text-white h-full flex items-center`} href="#workexperience" onClick={(e) => handleClickScrolling(e, "workexperience")}>Work experience 💼</a>
+          <a className={`${isOpen ? "w-full flex flex-row" : ''} w-full text-white h-full flex ${isOpen ? "gap-2 ": "flex-col"} items-center justify-center`} href="#projects" onClick={(e) => handleClickScrolling(e, "ongoingstudies")}>
+            <p>Ongoing Studies</p>
+            <span>📚</span>
+          </a>
+        </li>
+
+
+        <li className={`${isOpen ? "w-full" : ''} cursor-pointer bg-slate-800 hover:rounded hover:bg-slate-400 justify-center duration-300 ease-in-out w-40 h-16 flex items-center`}>
+          <a className={`${isOpen ? "w-full flex flex-row" : ''} w-full text-white h-full flex ${isOpen ? "gap-2 ": "flex-col"} items-center justify-center`} href="#workexperience" onClick={(e) => handleClickScrolling(e, "workexperience")}>
+            <p>Work experience </p>
+            <span>💼</span>
+          </a>
         </li>
         <li className={`${isOpen ? "w-full" : ''} cursor-pointer bg-slate-800 hover:rounded hover:bg-slate-400 justify-center duration-300 ease-in-out w-40 h-16 flex items-center`}>
-          <a className={`${isOpen ? "w-full flex justify-center" : ''} text-white h-full flex items-center`} href="#projects" onClick={(e) => handleClickScrolling(e, "projects")}>Projects 🛠️</a>
+          <a className={`${isOpen ? "w-full flex flex-row" : ''} w-full text-white h-full flex ${isOpen ? "gap-2 ": "flex-col"} items-center justify-center`} href="#projects" onClick={(e) => handleClickScrolling(e, "projects")}>
+            <p>Projects</p>
+            <span>🛠️</span>
+          </a>
         </li>
         <li className={`${isOpen ? "w-full" : ''} cursor-pointer bg-slate-800 hover:rounded hover:bg-slate-400 justify-center duration-300 ease-in-out w-40 h-16 flex items-center`}>
-          <a className={`${isOpen ? "w-full flex justify-center" : ''} text-white h-full flex items-center`} href="#interests" onClick={(e) => handleClickScrolling(e, "interests")}>Interests 🎵</a>
+          <a className={`${isOpen ? "w-full flex flex-row" : ''} w-full text-white h-full flex ${isOpen ? "gap-2 ": "flex-col"} items-center justify-center`} href="#interests" onClick={(e) => handleClickScrolling(e, "interests")}>
+            <p>Interests</p>
+            <span>🎵</span>
+          </a>
         </li>
         <li className={`${isOpen ? "w-full" : ''} cursor-pointer bg-slate-800 hover:rounded hover:bg-slate-400 justify-center duration-300 ease-in-out w-40 h-16 flex items-center`}>
-          <a className={`${isOpen ? "w-full flex justify-center" : ''} text-white h-full flex items-center`} href="#contact" onClick={(e) => handleClickScrolling(e, "contact")}>Contact ✉️</a>
+          <a className={`${isOpen ? "w-full flex flex-row" : ''} w-full text-white h-full flex ${isOpen ? "gap-2 ": "flex-col"} items-center justify-center`} href="#contact" onClick={(e) => handleClickScrolling(e, "contact")}>
+            <p>Contact</p>
+            <span>✉️</span>
+          </a>
         </li>
       </ul>
     </nav>
