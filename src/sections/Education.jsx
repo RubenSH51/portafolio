@@ -1,6 +1,33 @@
 import React, { useState, useEffect } from 'react'
 import Modal from '../components/Modal';
 
+// Front
+import front1 from "/assets/front/Laboratorio de JavaScript - Fake Store.jpg"
+import front2 from "/assets/front/Curso Práctico de HTML y CSS.jpg"
+import front3 from "/assets/front/Curso Práctico de JavaScript.jpg"
+import front4 from "/assets/front/Curso Práctico de React.js.jpg"
+import front5 from "/assets/front/Curso Profesional de React.js y Redux.jpg"
+import front6 from "/assets/front/Curso de React.js con Vite.js y TailwindCSS.jpg"
+import front7 from "/assets/front/Curso de React.js - Patrones de Render y Composición.jpg"
+import front8 from "/assets/front/Curso de React.js - Navegación con React Router.jpg"
+import front9 from "/assets/front/Curso de React.js - Manejo Profesional del Estado.jpg"
+
+// Software
+import soft1 from "/assets/software/Curso Básico de Algoritmos y Pensamiento Lógico.jpg"
+import soft2 from "/assets/software/Curso de Introducción a la Terminal y Línea de Comandos.jpg"
+import soft3 from "/assets/software/Curso de Introducción a los Algoritmos de Ordenamiento.jpg"
+import soft4 from "/assets/software/Curso de Programación Orientada a Objetos POO.jpg"
+import soft5 from "/assets/software/Fundamentos de Ingeniería de Software.jpg"
+
+// Back
+import back1 from "/assets/back/Curso Básico de PHP - Instalación, Fundamentos y Operadores.jpg"
+import back2 from "/assets/back/Curso Práctico de PHP.jpg"
+import back3 from "/assets/back/Curso de Integración de PHP con HTML.jpg"
+import back4 from "/assets/back/Curso de Introducción al Desarrollo Backend.jpg"
+import back5 from "/assets/back/Curso de Introducción a FastAPI - Path Operations Validaciones y Autenticación.jpg"
+import back6 from "/assets/back/Curso de FastAPI - Fundamentos Path Operations y Validaciones.jpg"
+
+
 export default function Education() {
   const [showModal, setShowModal] = useState(false);
   const [certificationSelected, setCertificationSelected] = useState([]);
@@ -8,13 +35,6 @@ export default function Education() {
 
   function showCertification(study)
   {
-    // 1) Abrir modal
-    // 2) Ver cual es el estudio: software, data, front, back, english
-    // 3) Dependiendo del estudio mostrar certificación
-    // 3a) No tengo certificación de desarrollador de software aún por lo que se necesita un msj
-    // 3b) Front   no tiene título aún, así que requiere mostrar diplomas de Platzi, Oracle One y Freecodecamp
-    // 3c) Back    no tiene título aún, así que requiere mostrar diplomas de Platzi
-    // 3d) English no tiene título aún, así que requiere mostrar diplomas de Platzi y placement test
 
 
     setShowModal(true);
@@ -23,12 +43,13 @@ export default function Education() {
     let eng2 = "https://i.imgur.com/YlaphAD.jpg";
     let eng1 = "https://i.imgur.com/uKzeYMQ.jpg";
 
+
     //certificaciones:
 
-    let software = [eng1,eng2,dataAnalyst];
+    let software = [soft1,soft2,soft3,soft4,soft5];
     let data = [eng1,eng2,dataAnalyst];
-    let front = [eng1,eng2,dataAnalyst];
-    let back = [eng1,eng2,dataAnalyst];
+    let front = [front1,front2,front3,front4,front5,front6,front7,front8,front9];
+    let back = [back1,back2,back3,back4,back5,back6];
     let english = [eng1,eng2,dataAnalyst];
 
 
