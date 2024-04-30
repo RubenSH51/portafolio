@@ -11,6 +11,9 @@ import front6 from "/assets/front/Curso de React.js con Vite.js y TailwindCSS.jp
 import front7 from "/assets/front/Curso de React.js - Patrones de Render y Composición.jpg"
 import front8 from "/assets/front/Curso de React.js - Navegación con React Router.jpg"
 import front9 from "/assets/front/Curso de React.js - Manejo Profesional del Estado.jpg"
+import alura1 from "/assets/front/Alura1.jpg"
+import alura2 from "/assets/front/Alura2.jpg"
+import alura3 from "/assets/front/Alura3.jpg"
 
 // Software
 import soft1 from "/assets/software/Curso Básico de Algoritmos y Pensamiento Lógico.jpg"
@@ -48,7 +51,7 @@ export default function Education() {
 
     let software = [soft1,soft2,soft3,soft4,soft5];
     let data = [eng1,eng2,dataAnalyst];
-    let front = [front1,front2,front3,front4,front5,front6,front7,front8,front9];
+    let front = [front1,front2,front3,front4,front5,front6,front7,front8,front9,alura1,alura2,alura3];
     let back = [back1,back2,back3,back4,back5,back6];
     let english = [eng1,eng2,dataAnalyst];
 
