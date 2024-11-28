@@ -77,7 +77,7 @@ export default function Contact() {
             Name
           </label>
           <input 
-            className='shadow appearance-none border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline text-white' 
+            className='shadow appearance-none border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline text-black' 
             id="name" 
             name="name" 
             type="text" 
@@ -95,7 +95,7 @@ export default function Contact() {
             Email
           </label>
           <input 
-            className='shadow appearance-none border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline text-white' 
+            className='shadow appearance-none border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline text-black' 
             id="email" 
             type="email" 
             name="email" 
@@ -113,7 +113,7 @@ export default function Contact() {
             Message
           </label>
           <textarea 
-            className='shadow appearance-none border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline text-white' 
+            className='shadow appearance-none border rounded w-full py-2 px-3 text-white-700 leading-tight focus:outline-none focus:shadow-outline text-black' 
             id="message" 
             name="message" 
             placeholder="Your Message" 
